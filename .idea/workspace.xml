@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f096f2c3-38bf-481e-952e-6e8f641c430a" name="Changes" comment="Tile subclasses improved immutability, added Collections.unmodifiableMap in Tile class&#10;.">
-      <change afterPath="$PROJECT_DIR$/src/Logic/Board/Board.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Logic/Board/Move.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Logic/Pieces/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Pieces/Piece.java" afterDir="false" />
-    </list>
+    <list default="true" id="f096f2c3-38bf-481e-952e-6e8f641c430a" name="Changes" comment="Tile subclasses improved immutability, added Collections.unmodifiableMap in Tile class&#10;." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

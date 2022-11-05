@@ -7,11 +7,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 public abstract class Tile {
-
+    //Coordinates
     protected final int tileNR;
-
+    //Map of empty tiles
     private static final Map<Integer, EmptyTile> EMPTY_TILES = createAllEmptyTiles();
-
+    //Creates the map of empty tiles
     private static Map<Integer, EmptyTile> createAllEmptyTiles() {
 
         final Map<Integer, EmptyTile> emptyTileMap = new HashMap<>();
@@ -20,7 +20,7 @@ public abstract class Tile {
         }
         return Collections.unmodifiableMap(emptyTileMap);
     }
-
+    //Creates a tile, uses piece to check if the tile is empty
     public static Tile createTile(final int tileNR, final Piece piece){
         return piece != null ? new OccupiedTile(tileNR, piece) : EMPTY_TILES.get(tileNR);
     }
@@ -32,7 +32,7 @@ public abstract class Tile {
     public abstract boolean isTileOccupied();
 
     public abstract Piece getPiece();
-
+    //Subclass for all the empty tiles
     public static final class EmptyTile extends Tile {
         private EmptyTile(final int nr) {
             super(nr);
@@ -49,7 +49,7 @@ public abstract class Tile {
         }
 
     }
-
+    //Subclass for all the occupied tiles
     public static final class OccupiedTile extends Tile{
 
         private final Piece pieceOnTile;
