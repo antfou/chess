@@ -1,8 +1,12 @@
 package Logic.Pieces;
 
+import Logic.Board.Board;
+import Logic.Board.Move;
 import Logic.Players.Side;
 
-public class Piece {
+import java.util.List;
+
+public abstract class Piece {
 
     protected final int pieceNR;
     protected final Side pieceSide;
@@ -11,4 +15,6 @@ public class Piece {
         this.pieceNR = pieceNR;
         this.pieceSide = pieceSide;
     }
+
+    public abstract List<Move> calculateLegalMoves(final Board board);
 }

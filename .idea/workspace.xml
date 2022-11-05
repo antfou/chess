@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f096f2c3-38bf-481e-952e-6e8f641c430a" name="Changes" comment="Tile subclasses improved immutability, added Collections.unmodifiableMap in Tile class&#10;.">
-      <change afterPath="$PROJECT_DIR$/src/Logic/Players/Side.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Logic/Board/Board.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Logic/Board/Move.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Logic/Pieces/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Pieces/Piece.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -13,8 +14,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -77,7 +78,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667681147366</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Tile subclasses improved immutability, added Collections.unmodifiableMap in Tile class&#10;.">
+      <created>1667681339094</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1667681339094</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
