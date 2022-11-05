@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f096f2c3-38bf-481e-952e-6e8f641c430a" name="Changes" comment="Added comments to code and removed unused classes.">
-      <change afterPath="$PROJECT_DIR$/src/Logic/Board/BoardUtils.java" afterDir="false" />
+    <list default="true" id="f096f2c3-38bf-481e-952e-6e8f641c430a" name="Changes" comment="Added a bunch of code to &quot;Soldier&quot; class that extends the &quot;Piece&quot; class.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Logic/Pieces/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Pieces/Piece.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Logic/Board/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Board/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Logic/Board/BoardUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Board/BoardUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Logic/Board/Move.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Board/Move.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Logic/Board/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Board/Tile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Logic/Pieces/Soldier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Pieces/Soldier.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667682240078</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added a bunch of code to &quot;Soldier&quot; class that extends the &quot;Piece&quot; class.">
+      <created>1667686233162</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1667686233162</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,6 +124,7 @@
     <MESSAGE value="mvoed code into new packages" />
     <MESSAGE value="Tile subclasses improved immutability, added Collections.unmodifiableMap in Tile class&#10;." />
     <MESSAGE value="Added comments to code and removed unused classes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added comments to code and removed unused classes." />
+    <MESSAGE value="Added a bunch of code to &quot;Soldier&quot; class that extends the &quot;Piece&quot; class." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a bunch of code to &quot;Soldier&quot; class that extends the &quot;Piece&quot; class." />
   </component>
 </project>

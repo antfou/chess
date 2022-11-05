@@ -15,7 +15,7 @@ import static Logic.Board.BoardUtils.isValidTileNr;
 
 public class Soldier extends Piece{
     //The MAXIMUM amount of legal moves for this piece
-    private final static int[] POSSIBLE_MOVES_NR = {-1,-5,-6,-7,7,6,5,1};
+    private final static int[] POSSIBLE_MOVES_NR = {-1,-5,-6,-7, 7, 6, 5, 1};
     Soldier(final int pieceNR, final Side pieceSide) {
         super(pieceNR, pieceSide);
     }
@@ -36,13 +36,13 @@ public class Soldier extends Piece{
                 final Tile possibleMoveTile = board.getTile(possibleMoveNr);
                 //Checks if tile is unoccupied to legalize the move, and adds move
                 if(!possibleMoveTile.isTileOccupied()){
-                    legalMoves.add(new Move());
+                    legalMoves.add(new Move.MajorMove(board, this, possibleMoveNr));
                 }else{
                     final Piece pieceOccupyingTile = possibleMoveTile.getPiece();
                     final Side pieceSide = pieceOccupyingTile.getPieceSide();
                     //Checks if piece is enemy to legalize the move, and adds move
                     if(this.pieceSide != pieceSide){
-                        legalMoves.add(new Move());
+                        legalMoves.add(new Move.AttackMove(board,this,possibleMoveNr,pieceOccupyingTile));
                     }
                 }
             }

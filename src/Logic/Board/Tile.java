@@ -15,7 +15,7 @@ public abstract class Tile {
     private static Map<Integer, EmptyTile> createAllEmptyTiles() {
 
         final Map<Integer, EmptyTile> emptyTileMap = new HashMap<>();
-        for (int i = 0; i < 36; i++) {
+        for (int i = 0; i < BoardUtils.NUM_TILES; i++) {
             emptyTileMap.put(i,new EmptyTile(i));
         }
         return Collections.unmodifiableMap(emptyTileMap);
@@ -25,7 +25,7 @@ public abstract class Tile {
         return piece != null ? new OccupiedTile(tileNR, piece) : EMPTY_TILES.get(tileNR);
     }
 
-    private Tile(int tileNR){
+    private Tile(final int tileNR){
         this.tileNR = tileNR;
     }
 
@@ -54,7 +54,7 @@ public abstract class Tile {
 
         private final Piece pieceOnTile;
 
-        private OccupiedTile(final int nr, Piece pieceOnTile){
+        private OccupiedTile(final int nr, final Piece pieceOnTile){
             super(nr);
             this.pieceOnTile = pieceOnTile;
         }
@@ -69,6 +69,5 @@ public abstract class Tile {
             return this.pieceOnTile;
         }
     }
-
 
 }
