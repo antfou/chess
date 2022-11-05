@@ -1,4 +1,6 @@
-package Graphics;
+package Logic.Board;
+
+import Logic.Pieces.Piece;
 
 public abstract class Tile {
 
