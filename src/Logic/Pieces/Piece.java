@@ -16,6 +16,11 @@ public abstract class Piece {
         this.pieceNR = pieceNR;
         this.pieceSide = pieceSide;
     }
+
+    //Method for determining color of piece
+    public Side getPieceSide(){
+        return this.pieceSide;
+    }
     //Abstract method for movement
     public abstract List<Move> calculateLegalMoves(final Board board);
 }
