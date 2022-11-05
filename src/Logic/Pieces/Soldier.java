@@ -1,13 +1,17 @@
 package Logic.Pieces;
 
 import Logic.Board.Board;
+import Logic.Board.BoardUtils;
 import Logic.Board.Move;
 import Logic.Board.Tile;
 import Logic.Players.Side;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
+
+import static Logic.Board.BoardUtils.isValidTileNr;
 
 public class Soldier extends Piece{
     //The MAXIMUM amount of legal moves for this piece
@@ -17,16 +21,18 @@ public class Soldier extends Piece{
     }
     //Calculate all the legal moves
     @Override
-    public List<Move> calculateLegalMoves(Board board) {
-
-        int possibleMoveNr;
+    public Collection<Move> calculateLegalMoves(Board board) {
         final List<Move> legalMoves = new ArrayList<>();
 
         for(final int currentNr : POSSIBLE_MOVES_NR){
+            final int possibleMoveNr = this.pieceNR + currentNr;
 
-            possibleMoveNr = this.pieceNR + currentNr;
+            if(isFirstColumnExclusions(this.pieceNR, currentNr) ||
+                    isSixthColumnExclusions(this.pieceNR, currentNr)){
+                continue;
+            }
 
-            if(true ){
+            if(isValidTileNr(possibleMoveNr) ){
                 final Tile possibleMoveTile = board.getTile(possibleMoveNr);
                 //Checks if tile is unoccupied to legalize the move, and adds move
                 if(!possibleMoveTile.isTileOccupied()){
@@ -44,4 +50,14 @@ public class Soldier extends Piece{
         }
         return Collections.unmodifiableList(legalMoves);
     }
+
+    //Methods to see if the move is legal through edge-hopping
+    private static boolean isFirstColumnExclusions(final int currentNr, final int candidateExclusion){
+        return BoardUtils.FIRST_COLUMN[currentNr] && ((candidateExclusion == -1)) || ((candidateExclusion == -7)) ||((candidateExclusion == 6));
+    }
+    private static boolean isSixthColumnExclusions(final int currentNr, final int candidateExclusion){
+        return BoardUtils.SIXTH_COLUMN[currentNr] && ((candidateExclusion == 1)) || ((candidateExclusion == 7)) ||((candidateExclusion == -6));
+    }
+
+
 }

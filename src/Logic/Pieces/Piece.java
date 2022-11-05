@@ -4,7 +4,7 @@ import Logic.Board.Board;
 import Logic.Board.Move;
 import Logic.Players.Side;
 
-import java.util.List;
+import java.util.Collection;
 
 public abstract class Piece {
     //Coordinates
@@ -22,5 +22,5 @@ public abstract class Piece {
         return this.pieceSide;
     }
     //Abstract method for movement
-    public abstract List<Move> calculateLegalMoves(final Board board);
+    public abstract Collection<Move> calculateLegalMoves(final Board board);
 }
