@@ -2,6 +2,7 @@ package Logic.Board;
 
 import Logic.Pieces.Piece;
 
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -17,7 +18,7 @@ public abstract class Tile {
         for (int i = 0; i < 36; i++) {
             emptyTileMap.put(i,new EmptyTile(i));
         }
-        return emptyTileMap;
+        return Collections.unmodifiableMap(emptyTileMap);
     }
 
     public static Tile createTile(final int tileNR, final Piece piece){
@@ -33,7 +34,7 @@ public abstract class Tile {
     public abstract Piece getPiece();
 
     public static final class EmptyTile extends Tile {
-        EmptyTile(final int nr) {
+        private EmptyTile(final int nr) {
             super(nr);
         }
 
@@ -53,7 +54,7 @@ public abstract class Tile {
 
         private final Piece pieceOnTile;
 
-        OccupiedTile(final int nr, Piece pieceOnTile){
+        private OccupiedTile(final int nr, Piece pieceOnTile){
             super(nr);
             this.pieceOnTile = pieceOnTile;
         }
