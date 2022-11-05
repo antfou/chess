@@ -2,14 +2,30 @@ package Logic.Board;
 
 import Logic.Pieces.Piece;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public abstract class Tile {
 
-    int tileNR;
-    boolean color;
+    protected final int tileNR;
 
-    Tile(int tileNR){
+    private static final Map<Integer, EmptyTile> EMPTY_TILES = createAllEmptyTiles();
+
+    private static Map<Integer, EmptyTile> createAllEmptyTiles() {
+
+        final Map<Integer, EmptyTile> emptyTileMap = new HashMap<>();
+        for (int i = 0; i < 36; i++) {
+            emptyTileMap.put(i,new EmptyTile(i));
+        }
+        return emptyTileMap;
+    }
+
+    public static Tile createTile(final int tileNR, final Piece piece){
+        return piece != null ? new OccupiedTile(tileNR, piece) : EMPTY_TILES.get(tileNR);
+    }
+
+    private Tile(int tileNR){
         this.tileNR = tileNR;
-        this.color = color;
     }
 
     public abstract boolean isTileOccupied();
@@ -17,7 +33,7 @@ public abstract class Tile {
     public abstract Piece getPiece();
 
     public static final class EmptyTile extends Tile {
-        EmptyTile(int nr) {
+        EmptyTile(final int nr) {
             super(nr);
         }
 
@@ -35,9 +51,9 @@ public abstract class Tile {
 
     public static final class OccupiedTile extends Tile{
 
-        Piece pieceOnTile;
+        private final Piece pieceOnTile;
 
-        OccupiedTile(int nr, Piece pieceOnTile){
+        OccupiedTile(final int nr, Piece pieceOnTile){
             super(nr);
             this.pieceOnTile = pieceOnTile;
         }
