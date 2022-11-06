@@ -10,7 +10,7 @@ import java.util.Collection;
 import java.util.List;
 
 public class Hound extends Piece{
-    private final static int[] POSSIBLE_MOVES_NR = {6};
+    private final static int[] POSSIBLE_MOVES_NR = {6, 5, 7};
 
     Hound(final int pieceNR, final Side pieceSide) {
         super(pieceNR, pieceSide);
@@ -21,13 +21,23 @@ public class Hound extends Piece{
 
         final List<Move> legalMoves = new ArrayList<>();
         for (final int currentNr : POSSIBLE_MOVES_NR) {
-            int possibleMoveNr = this.pieceNR + (this.getPieceSide().getDirection() * currentNr);
+            final int possibleMoveNr = this.pieceNR + (this.getPieceSide().getDirection() * currentNr);
             if(!BoardUtils.isValidTileNr(possibleMoveNr)){
                 continue;
             }
             if(currentNr == 8 && !board.getTile(possibleMoveNr).isTileOccupied()){
-                //TODO get back to this one
                 legalMoves.add(new Move.MajorMove(board,this,possibleMoveNr));
+            }else if(currentNr == 5 && this.isFirstMove() &&
+                    (BoardUtils.SECOND_ROW[this.pieceNR] && this.getPieceSide().isBlack()) ||
+                    (BoardUtils.FIFTH_ROW[this.pieceNR] && this.getPieceSide().isWhite())){
+                        legalMoves.add(new Move.MajorMove(board,this,currentNr));
+
+            }else if(currentNr == 7 && this.isFirstMove() &&
+                    (BoardUtils.SECOND_ROW[this.pieceNR] && this.getPieceSide().isBlack()) ||
+                    (BoardUtils.FIFTH_ROW[this.pieceNR] && this.getPieceSide().isWhite())){
+                        legalMoves.add(new Move.MajorMove(board,this,currentNr));
+
+
             }
 
         }

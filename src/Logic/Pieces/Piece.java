@@ -11,15 +11,22 @@ public abstract class Piece {
     protected final int pieceNR;
     //Allegiance(is black or is white)
     protected final Side pieceSide;
+    protected final boolean isFirstMove;
 
     Piece(final int pieceNR, final Side pieceSide){
         this.pieceNR = pieceNR;
         this.pieceSide = pieceSide;
+        //TODO: get back to this one
+        this.isFirstMove = false;
     }
 
     //Method for determining color of piece
     public Side getPieceSide(){
         return this.pieceSide;
+    }
+
+    public boolean isFirstMove(){
+        return this.isFirstMove;
     }
     //Abstract method for movement
     public abstract Collection<Move> calculateLegalMoves(final Board board);

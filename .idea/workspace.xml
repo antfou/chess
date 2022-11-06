@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f096f2c3-38bf-481e-952e-6e8f641c430a" name="Changes" comment="Added &quot;Queen&quot; class that extends the &quot;Piece&quot; class.">
-      <change afterPath="$PROJECT_DIR$/src/Logic/Pieces/Hound.java" afterDir="false" />
+    <list default="true" id="f096f2c3-38bf-481e-952e-6e8f641c430a" name="Changes" comment="Added &quot;Tank&quot; class that extends the &quot;Piece&quot; class.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Logic/Board/BoardUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Board/BoardUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Logic/Pieces/Hound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Pieces/Hound.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Logic/Pieces/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Pieces/Piece.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Logic/Players/Side.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Players/Side.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,12 +22,12 @@
     </option>
   </component>
   <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="Logic" />
+    <option name="BRANCH" value="Development" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Logic" />
+        <entry key="$PROJECT_DIR$" value="Development" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
