@@ -19,6 +19,9 @@ public abstract class Piece {
         //TODO: get back to this one
         this.isFirstMove = false;
     }
+    public int getPieceNR(){
+        return this.pieceNR;
+    }
 
     //Method for determining color of piece
     public Side getPieceSide(){

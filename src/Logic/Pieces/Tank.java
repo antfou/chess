@@ -33,14 +33,13 @@ public class Tank extends Piece{
                          isFourthColumnExclusions(this.pieceNR, currentNr) ||
                          isFifthColumnExclusions(this.pieceNR, currentNr) ||
                          isSixthColumnExclusions(this.pieceNR, currentNr)) {
-                     break;
+                     continue;
                  }
                  possibleMoveNr += currentNr;
                  if (BoardUtils.isValidTileNr(possibleMoveNr)){
                      if (isValidTileNr(possibleMoveNr)) {
                          final Tile possibleMoveTile = board.getTile(possibleMoveNr);
                          //Checks if tile is unoccupied to legalize the move, and adds move
-
                          if (!possibleMoveTile.isTileOccupied()) {
                              legalMoves.add(new Move.MajorMove(board, this, possibleMoveNr));
                          } else {
