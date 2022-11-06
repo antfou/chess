@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f096f2c3-38bf-481e-952e-6e8f641c430a" name="Changes" comment="Gave the &quot;Hound&quot; class a starting move.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Logic/Pieces/Hound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Pieces/Hound.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Logic/Pieces/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Pieces/Queen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Logic/Board/BoardUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Board/BoardUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
