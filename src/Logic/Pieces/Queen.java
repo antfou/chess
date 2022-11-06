@@ -20,7 +20,7 @@ public class Queen extends Piece{
     Queen(final int pieceNR, final Side pieceSide) {
         super(pieceNR, pieceSide);
     }
-
+            //TODO: Make queens attack move long range
     @Override
     public Collection<Move> calculateLegalMoves(Board board) {
         final List<Move> legalMoves = new ArrayList<>();

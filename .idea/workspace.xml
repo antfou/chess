@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f096f2c3-38bf-481e-952e-6e8f641c430a" name="Changes" comment="Added &quot;Tank&quot; class that extends the &quot;Piece&quot; class.">
+    <list default="true" id="f096f2c3-38bf-481e-952e-6e8f641c430a" name="Changes" comment="Gave the &quot;Hound&quot; class a starting move.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Logic/Board/BoardUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Board/BoardUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Logic/Pieces/Hound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Pieces/Hound.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Logic/Pieces/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Pieces/Piece.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Logic/Players/Side.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Players/Side.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Logic/Pieces/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Pieces/Queen.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667726565771</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Gave the &quot;Hound&quot; class a starting move.">
+      <created>1667734101778</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1667734101778</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +146,7 @@
     <MESSAGE value="Added a bunch of code to &quot;Soldier&quot; class that extends the &quot;Piece&quot; class." />
     <MESSAGE value="Added &quot;Tank&quot; class that extends the &quot;Piece&quot; class." />
     <MESSAGE value="Added &quot;Queen&quot; class that extends the &quot;Piece&quot; class." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added &quot;Queen&quot; class that extends the &quot;Piece&quot; class." />
+    <MESSAGE value="Gave the &quot;Hound&quot; class a starting move." />
+    <option name="LAST_COMMIT_MESSAGE" value="Gave the &quot;Hound&quot; class a starting move." />
   </component>
 </project>

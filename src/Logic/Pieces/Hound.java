@@ -3,10 +3,12 @@ package Logic.Pieces;
 import Logic.Board.Board;
 import Logic.Board.BoardUtils;
 import Logic.Board.Move;
+import Logic.Board.Tile;
 import Logic.Players.Side;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 public class Hound extends Piece{
@@ -25,22 +27,53 @@ public class Hound extends Piece{
             if(!BoardUtils.isValidTileNr(possibleMoveNr)){
                 continue;
             }
-            if(currentNr == 8 && !board.getTile(possibleMoveNr).isTileOccupied()){
-                legalMoves.add(new Move.MajorMove(board,this,possibleMoveNr));
+            if(currentNr == 6 && !board.getTile(possibleMoveNr).isTileOccupied()){
+                final Tile possibleMoveTile = board.getTile(possibleMoveNr);
+                if(!possibleMoveTile.isTileOccupied()){
+                    //Adds moving move
+                    legalMoves.add(new Move.MajorMove(board, this, possibleMoveNr));
+                }else{
+                    final Piece pieceOccupyingTile = possibleMoveTile.getPiece();
+                    final Side pieceSide = pieceOccupyingTile.getPieceSide();
+                    //Adds attacking move
+                    if(this.pieceSide != pieceSide){
+                        legalMoves.add(new Move.AttackMove(board,this,possibleMoveNr,pieceOccupyingTile));
+                    }
+                }
+                //Hound start-move, move right.
             }else if(currentNr == 5 && this.isFirstMove() &&
                     (BoardUtils.SECOND_ROW[this.pieceNR] && this.getPieceSide().isBlack()) ||
                     (BoardUtils.FIFTH_ROW[this.pieceNR] && this.getPieceSide().isWhite())){
-                        legalMoves.add(new Move.MajorMove(board,this,currentNr));
-
+                final Tile possibleMoveTile = board.getTile(possibleMoveNr);
+                if(!possibleMoveTile.isTileOccupied()){
+                    //Adds moving move
+                    legalMoves.add(new Move.MajorMove(board, this, possibleMoveNr));
+                }else{
+                    final Piece pieceOccupyingTile = possibleMoveTile.getPiece();
+                    final Side pieceSide = pieceOccupyingTile.getPieceSide();
+                    //Adds attacking move
+                    if(this.pieceSide != pieceSide){
+                        legalMoves.add(new Move.AttackMove(board,this,possibleMoveNr,pieceOccupyingTile));
+                    }
+                }
+                //Hound start-move, move left.
             }else if(currentNr == 7 && this.isFirstMove() &&
                     (BoardUtils.SECOND_ROW[this.pieceNR] && this.getPieceSide().isBlack()) ||
                     (BoardUtils.FIFTH_ROW[this.pieceNR] && this.getPieceSide().isWhite())){
-                        legalMoves.add(new Move.MajorMove(board,this,currentNr));
-
-
+                final Tile possibleMoveTile = board.getTile(possibleMoveNr);
+                if(!possibleMoveTile.isTileOccupied()){
+                    //Adds moving move
+                    legalMoves.add(new Move.MajorMove(board, this, possibleMoveNr));
+                }else{
+                    final Piece pieceOccupyingTile = possibleMoveTile.getPiece();
+                    final Side pieceSide = pieceOccupyingTile.getPieceSide();
+                    //Adds attacking move
+                    if(this.pieceSide != pieceSide){
+                        legalMoves.add(new Move.AttackMove(board,this,possibleMoveNr,pieceOccupyingTile));
+                    }
+                }
             }
-
         }
-        return null;
+        return Collections.unmodifiableList(legalMoves);
     }
 }
