@@ -29,6 +29,7 @@ public class Soldier extends Piece{
 
             if(isFirstColumnExclusions(this.pieceNR, currentNr) ||
                     isSixthColumnExclusions(this.pieceNR, currentNr)){
+                //Keep an eye on this "continue"
                 continue;
             }
 
@@ -53,10 +54,10 @@ public class Soldier extends Piece{
 
     //Methods to see if the move is legal through edge-hopping
     private static boolean isFirstColumnExclusions(final int currentNr, final int candidateExclusion){
-        return BoardUtils.FIRST_COLUMN[currentNr] && ((candidateExclusion == -1)) || ((candidateExclusion == -7)) ||((candidateExclusion == 6));
+        return BoardUtils.FIRST_COLUMN[currentNr] && ((candidateExclusion == -1)) || ((candidateExclusion == -7));
     }
     private static boolean isSixthColumnExclusions(final int currentNr, final int candidateExclusion){
-        return BoardUtils.SIXTH_COLUMN[currentNr] && ((candidateExclusion == 1)) || ((candidateExclusion == 7)) ||((candidateExclusion == -6));
+        return BoardUtils.SIXTH_COLUMN[currentNr] && ((candidateExclusion == 1)) || ((candidateExclusion == 7));
     }
 
 
