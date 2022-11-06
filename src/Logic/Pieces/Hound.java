@@ -14,7 +14,7 @@ import java.util.List;
 public class Hound extends Piece{
     private final static int[] POSSIBLE_MOVES_NR = {6, 5, 7};
 
-    Hound(final int pieceNR, final Side pieceSide) {
+    public Hound(final int pieceNR, final Side pieceSide) {
         super(pieceNR, pieceSide);
     }
 

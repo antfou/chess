@@ -16,7 +16,7 @@ import static Logic.Board.BoardUtils.isValidTileNr;
 public class Soldier extends Piece{
     //The MAXIMUM amount of legal moves for this piece
     private final static int[] POSSIBLE_MOVES_NR = {-1,-5,-6,-7, 7, 6, 5, 1};
-    Soldier(final int pieceNR, final Side pieceSide) {
+    public Soldier(final int pieceNR, final Side pieceSide) {
         super(pieceNR, pieceSide);
     }
     //Calculate all the legal moves

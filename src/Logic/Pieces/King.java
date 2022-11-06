@@ -15,7 +15,7 @@ import static Logic.Board.BoardUtils.isValidTileNr;
 
 public class King extends Piece{
     private final static int[] POSSIBLE_MOVES_NR = {-5,-7,7,5};
-    King(final int pieceNR,final Side pieceSide) {
+    public King(final int pieceNR, final Side pieceSide) {
         super( pieceNR,  pieceSide);
     }
 

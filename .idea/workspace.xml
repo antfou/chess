@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f096f2c3-38bf-481e-952e-6e8f641c430a" name="Changes" comment="Fixed minor movement errors in all Piece classes.">
+    <list default="true" id="f096f2c3-38bf-481e-952e-6e8f641c430a" name="Changes" comment="Started work in &quot;Board&quot; class, made a rudimentary builder.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Logic/Board/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Board/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Logic/Pieces/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Pieces/Piece.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Logic/Pieces/Hound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Pieces/Hound.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Logic/Pieces/King.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Pieces/King.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Logic/Pieces/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Pieces/Queen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Logic/Pieces/Soldier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Pieces/Soldier.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Logic/Pieces/Tank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Pieces/Tank.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -136,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667736510315</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Started work in &quot;Board&quot; class, made a rudimentary builder.">
+      <created>1667738067781</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1667738067781</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,6 +175,7 @@
     <MESSAGE value="Fixed errors in BoardUtils" />
     <MESSAGE value="Fixed minor movement erreors in all Piece classes." />
     <MESSAGE value="Fixed minor movement errors in all Piece classes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed minor movement errors in all Piece classes." />
+    <MESSAGE value="Started work in &quot;Board&quot; class, made a rudimentary builder." />
+    <option name="LAST_COMMIT_MESSAGE" value="Started work in &quot;Board&quot; class, made a rudimentary builder." />
   </component>
 </project>

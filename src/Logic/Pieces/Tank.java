@@ -16,7 +16,7 @@ import static Logic.Board.BoardUtils.isValidTileNr;
 public class Tank extends Piece{
 
     private final static int[] POSSIBLE_MOVES_NR = {-1,-6,-6,1};
-    Tank(final int pieceNR,final Side pieceSide) {
+    public Tank(final int pieceNR, final Side pieceSide) {
         super( pieceNR,  pieceSide);
     }
 

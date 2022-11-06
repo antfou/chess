@@ -17,7 +17,7 @@ import static Logic.Board.BoardUtils.isValidTileNr;
 public class Queen extends Piece{
     private final static int[] POSSIBLE_MOVES_NR = {-7,-6,-5,-1,1,5,6,7};
 
-    Queen(final int pieceNR, final Side pieceSide) {
+    public Queen(final int pieceNR, final Side pieceSide) {
         super(pieceNR, pieceSide);
     }
             //TODO: Make queens attack move long range
