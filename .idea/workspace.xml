@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f096f2c3-38bf-481e-952e-6e8f641c430a" name="Changes" comment="Gave the &quot;Hound&quot; class a starting move.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Logic/Board/BoardUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Board/BoardUtils.java" afterDir="false" />
+    <list default="true" id="f096f2c3-38bf-481e-952e-6e8f641c430a" name="Changes" comment="Fixed errors in BoardUtils">
+      <change beforePath="$PROJECT_DIR$/src/Logic/Pieces/King.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Pieces/King.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Logic/Pieces/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Pieces/Queen.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667734101778</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Fixed errors in BoardUtils">
+      <created>1667736292639</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1667736292639</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +153,7 @@
     <MESSAGE value="Added &quot;Tank&quot; class that extends the &quot;Piece&quot; class." />
     <MESSAGE value="Added &quot;Queen&quot; class that extends the &quot;Piece&quot; class." />
     <MESSAGE value="Gave the &quot;Hound&quot; class a starting move." />
-    <option name="LAST_COMMIT_MESSAGE" value="Gave the &quot;Hound&quot; class a starting move." />
+    <MESSAGE value="Fixed errors in BoardUtils" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed errors in BoardUtils" />
   </component>
 </project>

@@ -15,7 +15,7 @@ import static Logic.Board.BoardUtils.isValidTileNr;
 //Add sniper feature, use code from pawn class
 
 public class Queen extends Piece{
-    private final static int[] POSSIBLE_MOVES_NR = {-9,-8,-7,-1,1,7,8,9};
+    private final static int[] POSSIBLE_MOVES_NR = {-7,-6,-5,-1,1,5,6,7};
 
     Queen(final int pieceNR, final Side pieceSide) {
         super(pieceNR, pieceSide);
@@ -56,9 +56,9 @@ public class Queen extends Piece{
         return Collections.unmodifiableList(legalMoves);
     }
     private static boolean isFirstColumnExclusions ( final int currentNr, final int candidateExclusion){
-        return BoardUtils.FIRST_COLUMN[currentNr] && ((candidateExclusion == -1)) || ((candidateExclusion == -9)) || ((candidateExclusion == 7));
+        return BoardUtils.FIRST_COLUMN[currentNr] && ((candidateExclusion == -1)) || ((candidateExclusion == -7)) || ((candidateExclusion == 5));
     }
     private static boolean isSixthColumnExclusions ( final int currentNr, final int candidateExclusion){
-        return BoardUtils.SIXTH_COLUMN[currentNr] && ((candidateExclusion == 1)) || ((candidateExclusion == -7)) || ((candidateExclusion == 9));
+        return BoardUtils.SIXTH_COLUMN[currentNr] && ((candidateExclusion == 1)) || ((candidateExclusion == -5)) || ((candidateExclusion == 7));
     }
 }

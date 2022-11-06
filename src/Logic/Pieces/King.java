@@ -14,11 +14,12 @@ import java.util.List;
 import static Logic.Board.BoardUtils.isValidTileNr;
 
 public class King extends Piece{
-    private final static int[] POSSIBLE_MOVES_NR = {-9,-7,7,9};
+    private final static int[] POSSIBLE_MOVES_NR = {-5,-7,7,5};
     King(final int pieceNR,final Side pieceSide) {
         super( pieceNR,  pieceSide);
     }
 
+    //TODO: Add can't do suicidal moves
     @Override
     public Collection<Move> calculateLegalMoves(Board board) {
         final List<Move> legalMoves = new ArrayList<>();
@@ -54,9 +55,9 @@ public class King extends Piece{
         return Collections.unmodifiableList(legalMoves);
     }
     private static boolean isFirstColumnExclusions ( final int currentNr, final int candidateExclusion){
-        return BoardUtils.FIRST_COLUMN[currentNr] && ((candidateExclusion == -9)) || ((candidateExclusion == 7));
+        return BoardUtils.FIRST_COLUMN[currentNr] && ((candidateExclusion == -7)) || ((candidateExclusion == 5));
     }
     private static boolean isSixthColumnExclusions ( final int currentNr, final int candidateExclusion){
-        return BoardUtils.SIXTH_COLUMN[currentNr] && ((candidateExclusion == -7)) || ((candidateExclusion == 9));
+        return BoardUtils.SIXTH_COLUMN[currentNr] && ((candidateExclusion == -5)) || ((candidateExclusion == 7));
     }
 }
