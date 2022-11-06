@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f096f2c3-38bf-481e-952e-6e8f641c430a" name="Changes" comment="Added &quot;Tank&quot; class that extends the &quot;Piece&quot; class.">
-      <change afterPath="$PROJECT_DIR$/src/Logic/Pieces/King.java" afterDir="false" />
+    <list default="true" id="f096f2c3-38bf-481e-952e-6e8f641c430a" name="Changes" comment="Added a bunch of code to &quot;Soldier&quot; class that extends the &quot;Piece&quot; class.">
+      <change afterPath="$PROJECT_DIR$/src/Logic/Pieces/Queen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Logic/Pieces/Soldier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Pieces/Soldier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Logic/Pieces/Tank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Pieces/Tank.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
