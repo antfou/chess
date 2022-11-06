@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f096f2c3-38bf-481e-952e-6e8f641c430a" name="Changes" comment="Added a bunch of code to &quot;Soldier&quot; class that extends the &quot;Piece&quot; class.">
-      <change afterPath="$PROJECT_DIR$/src/Logic/Pieces/Queen.java" afterDir="false" />
+    <list default="true" id="f096f2c3-38bf-481e-952e-6e8f641c430a" name="Changes" comment="Added &quot;Queen&quot; class that extends the &quot;Piece&quot; class.">
+      <change afterPath="$PROJECT_DIR$/src/Logic/Pieces/Hound.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Logic/Players/Side.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Players/Side.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667722583542</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added &quot;Queen&quot; class that extends the &quot;Piece&quot; class.">
+      <created>1667726565771</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1667726565771</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,6 +138,7 @@
     <MESSAGE value="Added comments to code and removed unused classes." />
     <MESSAGE value="Added a bunch of code to &quot;Soldier&quot; class that extends the &quot;Piece&quot; class." />
     <MESSAGE value="Added &quot;Tank&quot; class that extends the &quot;Piece&quot; class." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added &quot;Tank&quot; class that extends the &quot;Piece&quot; class." />
+    <MESSAGE value="Added &quot;Queen&quot; class that extends the &quot;Piece&quot; class." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added &quot;Queen&quot; class that extends the &quot;Piece&quot; class." />
   </component>
 </project>
