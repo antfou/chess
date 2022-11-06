@@ -21,7 +21,7 @@ public class Soldier extends Piece{
     }
     //Calculate all the legal moves
     @Override
-    public Collection<Move> calculateLegalMoves(Board board) {
+    public Collection<Move> calculateLegalMoves(final Board board) {
         final List<Move> legalMoves = new ArrayList<>();
 
         for(final int currentNr : POSSIBLE_MOVES_NR){
@@ -32,7 +32,6 @@ public class Soldier extends Piece{
                 //Keep an eye on this "continue"
                 continue;
             }
-
             if(isValidTileNr(possibleMoveNr) ){
                 final Tile possibleMoveTile = board.getTile(possibleMoveNr);
                 //Checks if tile is unoccupied to legalize the move, and adds move
@@ -47,11 +46,9 @@ public class Soldier extends Piece{
                     }
                 }
             }
-
         }
         return Collections.unmodifiableList(legalMoves);
     }
-
     //Methods to see if the move is legal through edge-hopping
     private static boolean isFirstColumnExclusions(final int currentNr, final int candidateExclusion){
         return BoardUtils.FIRST_COLUMN[currentNr] && ((candidateExclusion == -1)) || ((candidateExclusion == -7));
@@ -59,6 +56,4 @@ public class Soldier extends Piece{
     private static boolean isSixthColumnExclusions(final int currentNr, final int candidateExclusion){
         return BoardUtils.SIXTH_COLUMN[currentNr] && ((candidateExclusion == 1)) || ((candidateExclusion == 7));
     }
-
-
 }
